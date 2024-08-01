@@ -1,5 +1,9 @@
-> cmake-build-debug 、cmake-build-release ./idea 
-> 可以刪除
+> IDE：clion
+
+> operating system :win11
+
+> cmake-build-debug 、cmake-build-release ./idea
+> 資料夾 可以刪除
 # PROMPT 題目
 > 用C語言寫玩德州撲克的牌組，並統計機率，規則如下
 
