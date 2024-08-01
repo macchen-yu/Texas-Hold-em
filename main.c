@@ -54,17 +54,7 @@ int compareByPips(const void* a, const void* b) {
     return cardA->pips - cardB->pips;
 }
 
-//// 比較函數，用於按花色和點數排序
-//int compareBySuitAndPips(const void* a, const void* b) {
-//    Card* cardA = (Card*)a;
-//    Card* cardB = (Card*)b;
-//    if (cardA->suit != cardB->suit) {
-//        return cardA->suit - cardB->suit;
-//    }
-//    else {
-//        return cardA->pips - cardB->pips;
-//    }
-//}
+
 
 // 評估手牌函數
 // 函數檢查 suitCount 是否有數字大於等於 5
@@ -73,15 +63,7 @@ bool hasFlush(int* suitCount) {
         if (suitCount[i] >= 5) {
             return true;
         }
-        //if (suitCount[i] == 7) {
-        //    return true;
-        //}
-        //else if (suitCount[i] == 6) {
-        //    return true;
-        //}
-        //else if (suitCount[i] == 5) {
-        //    return true;
-        //}
+
 
     }
     return false;
