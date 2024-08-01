@@ -1,0 +1,9 @@
+# ninja log v6
+19	89	7442049938525983	CMakeFiles/Tex_poker.dir/Src/combineHand.c.obj	428af53caff03378
+22	102	7442049938558803	CMakeFiles/Tex_poker.dir/Src/dealHands.c.obj	6724ecf6f983cdfd
+105	170	7442049939398118	Tex_poker.exe	98403565314d4a74
+12	89	7442049938469020	CMakeFiles/Tex_poker.dir/main.c.obj	e299274f8c355e0c
+16	87	7442049938506008	CMakeFiles/Tex_poker.dir/Src/EvaluateHand.c.obj	4ed7521c0c7be55
+28	102	7442049938625905	CMakeFiles/Tex_poker.dir/Src/shuffleDeck.c.obj	cc98096e51debfb8
+32	104	7442049938656424	CMakeFiles/Tex_poker.dir/Src/sortAndStoreHand.c.obj	21bb2f5f63494962
+25	105	7442049938589661	CMakeFiles/Tex_poker.dir/Src/initializeDeck.c.obj	e4513e16b43589d7

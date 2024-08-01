@@ -1,0 +1,3 @@
+C:/Users/User/CLionProjects/Tex_poker/cmake-build-release/CMakeFiles/Tex_poker.dir
+C:/Users/User/CLionProjects/Tex_poker/cmake-build-release/CMakeFiles/edit_cache.dir
+C:/Users/User/CLionProjects/Tex_poker/cmake-build-release/CMakeFiles/rebuild_cache.dir
