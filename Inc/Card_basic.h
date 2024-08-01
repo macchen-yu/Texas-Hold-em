@@ -7,7 +7,6 @@
 #define TEX_POKER_CARD_BASIC_H
     #include "common.h"
     #define NUM_CARDS 52
-    //#define NUM_HANDS 1000000
     #define NUM_HANDS 13378456
     #define HAND_SIZE 7
     #define NUM_PLAYERS 10
