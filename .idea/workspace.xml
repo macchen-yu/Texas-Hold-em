@@ -20,13 +20,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a34082c6-f0ec-4e18-9692-d709ae107727" name="Changes" comment="last time">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a34082c6-f0ec-4e18-9692-d709ae107727" name="Changes" comment="last2 time">
       <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-8079989215b6f008b70e.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-cf634431261a02af707b.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-08-01T11-25-50-0476.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Tex_poker-Debug-891d3ffaf8460c20954d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/a.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
@@ -115,7 +114,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722511539246</updated>
-      <workItem from="1722511540777" duration="403000" />
+      <workItem from="1722511540777" duration="472000" />
     </task>
     <task id="LOCAL-00001" summary="last time">
       <option name="closed" value="true" />
@@ -125,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722511763785</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="last2 time">
+      <option name="closed" value="true" />
+      <created>1722511978664</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722511978664</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +156,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="last time" />
-    <option name="LAST_COMMIT_MESSAGE" value="last time" />
+    <MESSAGE value="last2 time" />
+    <option name="LAST_COMMIT_MESSAGE" value="last2 time" />
   </component>
 </project>
