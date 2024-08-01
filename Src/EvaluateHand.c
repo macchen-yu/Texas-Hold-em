@@ -31,6 +31,15 @@ void countCardPips(Card hand[], int size, int matches[]) {
 }
 
 // 函數檢查 handByPips 是否包含順子
+/**
+ * @brief Checks if the given hand contains a straight.
+ *
+ * This function checks if the provided hand contains a straight. A straight
+ * consists of five consecutive cards, regardless of their suit.
+ *
+ * @param handByPips An array of cards sorted by their pips (rank).
+ * @return true if the hand contains a straight, false otherwise.
+ */
 static bool hasStraight(Card* handByPips) {
     // 創建一個新的數組來存儲已經排序的點數
     int pips[HAND_SIZE];
@@ -74,6 +83,15 @@ static bool hasStraight(Card* handByPips) {
     return false;
 }
 // 函數檢查 handBySuit 是否包含點數為 10、11、12、13 和 1 的牌
+/**
+ * @brief Checks if the given hand contains a royal flush.
+ *
+ * This function checks if the provided hand contains a royal flush. A royal flush
+ * consists of the cards 10, J, Q, K, and A all of the same suit.
+ *
+ * @param handBySuit An array of cards filtered by the suit to check for a royal flush.
+ * @return true if the hand contains a royal flush, false otherwise.
+ */
 static bool hasRoyalFlush(Card* handBySuit) {
     bool has10 = false, has11 = false, has12 = false, has13 = false, has1 = false;
 
@@ -88,6 +106,16 @@ static bool hasRoyalFlush(Card* handBySuit) {
     return has10 && has11 && has12 && has13 && has1;
 }
 //函數將 handBySuit 中與指定 suit 不同的牌變為 suit = -1 和 pips = -1
+/**
+ * @brief Filters the given hand by suit, keeping only the cards of the specified suit.
+ *
+ * This function filters the provided hand array, modifying it to contain only the cards
+ * of the specified suit. Cards not matching the specified suit are removed.
+ *
+ * @param suit       The suit to filter by.
+ * @param handBySuit The array of cards to be filtered. This array is modified in place
+ *                   to contain only the cards of the specified suit.
+ */
 static void filterHandBySuit(int suit, Card* handBySuit) {
     for (int i = 0; i < HAND_SIZE; ++i) {
         if (handBySuit[i].suit != suit) {
@@ -97,6 +125,16 @@ static void filterHandBySuit(int suit, Card* handBySuit) {
     }
 }
 //當有suit超過五個時回傳花色
+/**
+ * @brief Determines the suit that forms a flush based on suit counts.
+ *
+ * This function checks the suit counts array to determine which suit
+ * forms a flush (i.e., has five or more cards of the same suit).
+ *
+ * @param suitCount An array where each element represents the count of cards for each suit.
+ *                  The array is assumed to have 4 elements, corresponding to the four suits.
+ * @return The suit that forms a flush if a flush is present, otherwise -1.
+ */
 static int getFlushSuit(int* suitCount) {
     for (int i = 0; i < 4; ++i) {
         if (suitCount[i] >= 5) {
@@ -106,6 +144,16 @@ static int getFlushSuit(int* suitCount) {
     return -1;
 }
 // 函數檢查 suitCount 是否有數字大於等於 5
+/**
+ * @brief Checks if there is a flush based on suit counts.
+ *
+ * This function checks the suit counts array to determine if there are
+ * five or more cards of the same suit, indicating a flush.
+ *
+ * @param suitCount An array where each element represents the count of cards for each suit.
+ *                  The array is assumed to have 4 elements, corresponding to the four suits.
+ * @return true if a flush is present, false otherwise.
+ */
 static bool hasFlush(int* suitCount) {
     for (int i = 0; i < 4; ++i) {
         if (suitCount[i] >= 5) {
@@ -118,6 +166,28 @@ static bool hasFlush(int* suitCount) {
 }
 
 // 評估手牌函數
+/**
+ * @brief Evaluates a poker hand and updates the counts for various hand rankings.
+ *
+ * This function evaluates a poker hand to determine its ranking and updates
+ * the corresponding count in the provided counts array. The hand is evaluated
+ * for flushes, straights, four of a kind, full house, three of a kind, two pairs,
+ * one pair, and high card.
+ *
+ * @param handByPips An array of cards representing the hand to be evaluated.
+ * @param counts     An array where the counts of different hand rankings are updated.
+ *                   The array should be pre-allocated with at least 10 elements:
+ *                   counts[0] - Royal Flush
+ *                   counts[1] - Straight Flush
+ *                   counts[2] - Four of a Kind
+ *                   counts[3] - Full House
+ *                   counts[4] - Flush
+ *                   counts[5] - Straight
+ *                   counts[6] - Three of a Kind
+ *                   counts[7] - Two Pair
+ *                   counts[8] - One Pair
+ *                   counts[9] - High Card
+ */
 void evaluateHand(Card* handByPips, int* counts) {
     int pipsCount[14] = { 0 };  // 計算每個點數的張數
     int suitCount[4] = { 0 };   // 計算每個花色的張數
