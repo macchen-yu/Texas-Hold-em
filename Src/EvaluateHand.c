@@ -197,9 +197,7 @@ void evaluateHand(Card* handByPips, int* counts) {
     }
     if (hasFlush(suitCount)) {//同個花色大於五張
         int suit = getFlushSuit(suitCount);
-        //filterHandBySuit(suit, handBySuit);//把不是同花色的牌拿掉
         filterHandBySuit(suit, handByPips);//把不是同花色的牌拿掉
-        //if (hasRoyalFlush(handBySuit)) {//檢查是不是黃家同花順
         if (hasRoyalFlush(handByPips)) {//檢查是不是黃家同花順
             counts[0] += 1;
         }
@@ -229,7 +227,6 @@ void evaluateHand(Card* handByPips, int* counts) {
         else if (matches[1] != 0 && matches[2] == 0) { //3張 一樣
             counts[6] += 1;
         }
-            //else if (matches[1] == 0 && matches[2] == 2) { //2對
         else if (matches[1] == 0 && matches[2] >= 2) { //2對
             counts[7] += 1;
         }
